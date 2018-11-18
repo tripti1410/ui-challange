@@ -1,0 +1,30 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 3.2rem 0.8rem 1.6rem;
+  border-bottom: 1px solid $mono-3;
+
+  &__logo-container {
+    width: 15rem;
+    height: 4rem;
+  }
+
+  &__service-details {
+    color: $mono-4;
+    font-size: $fs-s;
+    align-self: center;
+  }
+}
+
+.service-details {
+  &__phone-number {
+    font-weight: $fw-bold;
+  }
+  &__name {
+    display: none;
+    @media (min-width: 768px) {
+      display: inline-flex;
+    }
+  }
+}
+
