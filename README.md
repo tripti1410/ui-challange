@@ -7,7 +7,7 @@ UI code challenge.
 2. Not focused much on icon details like colors.
 3. Did not implemented sub directory folder listing.
 4. Not used any frameworks for css and js.
-5. Typography created from my experience;
+5. Typography created from my experience, colors not provided so used my own color scheme.
 6. Ideally I would have modularized code into reusable js components like header, button, icons, card-estate-list etc. given more time.
 
 ## The task
