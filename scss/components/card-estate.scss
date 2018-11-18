@@ -1,0 +1,126 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.card-estate {
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.6rem;
+  grid-template-areas:
+    "estateImage"
+    "estateDetails"
+    "downloadButton";
+
+  @media (min-width: 768px) {
+    grid-template-columns: 15rem 2fr;
+    grid-template-areas: "estateImage estateDetails" "downloadButton .";
+  }
+
+  @media (min-width: 1024px) {
+    border: 1px solid $mono-3;
+    grid-template-columns: 15rem 2fr max-content;
+    grid-template-areas: "estateImage estateDetails downloadButton";
+  }
+
+  &__details {
+    grid-area: estateDetails;
+    display: grid;
+    grid-gap: 0.8rem;
+  }
+
+  &__details-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  &__image-container {
+    grid-area: estateImage;
+    background-color: $mono-2;
+
+    @media (min-width: 768px) {
+      width: 15rem;
+      height: 20rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__download-button {
+    grid-area: downloadButton;
+    display: inline-grid;
+    background-color: $accent-1;
+    text-transform: uppercase;
+    border-color: $accent-1;
+    color: $white;
+    font-size: $fs-l;
+    font-weight: $fw-bold;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+.card-estate-docs-item {
+  display: flex;
+  border-bottom: 1px solid $mono-3;
+  padding: 1.6rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    border: 1px solid $mono-3;
+    border-top: 0;
+  }
+
+  &__icon {
+    display: none;
+    @media (min-width: 768px) {
+      width: 4rem;
+      height: 4rem;
+      font-size: $fs-xs;
+      border-radius: 50%;
+      padding: 0.8rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $mono-3;
+      margin-right: 1.6rem;
+    }
+  }
+  &__checkbox {
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 1px solid $mono-3;
+    margin: 0 1.6rem 0 0;
+  }
+
+  &__identification-details {
+    flex-grow: 1;
+    margin-right: 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+  }
+
+  &__name {
+    font-size: $fs-m;
+    font-weight: $fw-bold;
+    margin-right: 1.6rem;
+  }
+  &__description {
+    display: inline-flex;
+    font-size: $fs-s;
+    color: $mono-4;
+  }
+
+  &__preview {
+    margin-right: 0.8rem;
+  }
+}
