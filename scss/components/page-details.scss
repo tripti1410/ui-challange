@@ -1,0 +1,19 @@
+.page-details {
+  width: 80%;
+  margin: 2rem auto 2rem;
+  @media (min-width: 768px) {
+    width: 50%;
+    margin: 3rem auto 2rem;
+  }
+
+  &__title {
+    font-size: $fs-xxl;
+    text-align: center;
+  }
+  &__sub-title {
+    font-size: $fs-xl;
+    font-weight: $fw-normal;
+    color: $mono-4;
+    text-align: center;
+  }
+}
