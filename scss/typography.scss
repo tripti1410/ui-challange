@@ -1,0 +1,41 @@
+
+$systemType: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$brandType: "Open Sans", sans-serif;
+
+/* Font Scale */
+$fs-xxs: 1rem;
+$fs-xs: 1.2rem;
+$fs-s: 1.4rem;
+$fs-m: 1.6rem;
+$fs-l: 1.8rem;
+$fs-xl: 2rem;
+$fs-xxl: 2.4rem;
+$fs-jumbo: 4rem;
+
+/* Line height */
+$lh-1: 1;
+$lh-2: 1.2;
+$lh-3: 1.3;
+$lh-4: 1.4;
+$lh-5: 1.5;
+
+/* Font Weight */
+$fw-light: 300;
+$fw-normal: 400;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-display: swap;
+  font: normal normal normal 1em / 1 $brandType;
+  font-size: 62.5%;
+}
+
+body {
+  color: $mono-5;
+  background: $mono-1;
+  font-size: $fs-m;
+  margin: 0;
+}
