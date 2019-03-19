@@ -1,5 +1,5 @@
 # ui-challange
-UI code challenge.
+This UI code challenge i did in 3hours restricted tme. As this was the task give by a company.
 
 
 ## My comments
